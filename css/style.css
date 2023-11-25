@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+/* Global */
+
+body {
+    background-color: black;
+    color: #fff;
+}
+
+section {
+    height: 100vh;
+}
+
+.btn {
+    background: none;
+    color: rgb(23, 219, 23);
+    border: 2px solid rgb(23, 219, 23);
+    border-radius: 0.5rem;
+    padding: 0.7rem 1.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .4s;
+    cursor: pointer;    
+}
+
+.btn:hover {
+    background-color: rgb(23, 219, 23);
+    color: black;
+    box-shadow: 0px 0px 7px rgb(23, 219, 23);
+    scale: 1.05;
+}
+
+/* Home */
+
+.home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.home-header {
+    text-transform: uppercase;
+}
+
+.home-header h2 {
+    font-size: 70px;
+    line-height: 60px;
+}
+
+.frontend {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+.home-header p {
+    margin-bottom: 5px;
+    margin-left: 3px;
+    color: rgb(23, 219, 23);
+}
+
+.icons {
+    display: flex;
+    font-size: 30px;
+    gap: .6rem;
+}
+
+.icons a {
+    color: #fff;
+    transition: .3s;
+}
+
+.icons a:hover {
+    color: rgb(23, 219, 23);
+    text-shadow: 0px 0px 10px rgb(23, 219, 23); 
+    scale: 1.05;   
+}
+
