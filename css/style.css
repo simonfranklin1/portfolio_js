@@ -98,18 +98,53 @@ h3.title span {
 .about {
     display: flex;
     flex-direction: column;
+    gap: 3.5rem;
 }
 
 .about-me {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .about-me img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
     object-position: top;
     background-color: rgb(23, 219, 23);
+    box-shadow: 0px 0px 10px rgb(23, 219, 23);
+    animation: float 2s infinite ease-in-out alternate;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(-10%);
+    } to {
+        transform: translateY(5%);
+    }
+}
+
+.informations {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.informations h3 {
+    color: rgb(23, 219, 23);
+}
+
+.informations ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    list-style: none;
+}
+
+.informations ul li > i {
+    margin-right: .3rem;
+    color: rgb(23, 219, 23);
+    text-shadow: 0px 0px 7px rgb(23, 219, 23);
 }
