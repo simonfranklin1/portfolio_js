@@ -13,7 +13,8 @@ body {
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
+    padding: 1rem;
 }
 
 .btn {
@@ -89,7 +90,7 @@ h3.title span {
 
 .icons a:hover {
     color: rgb(23, 219, 23);
-    text-shadow: 0px 0px 10px rgb(23, 219, 23); 
+    text-shadow: 0px 0px 15px rgb(23, 219, 23); 
     scale: 1.05;   
 }
 
@@ -108,13 +109,13 @@ h3.title span {
 }
 
 .about-me img {
-    width: 250px;
+    width: 220px;
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
     object-position: top;
     background-color: rgb(23, 219, 23);
-    box-shadow: 0px 0px 10px rgb(23, 219, 23);
+    box-shadow: 0px 0px 15px rgb(23, 219, 23);
     animation: float 2s infinite ease-in-out alternate;
 }
 
@@ -147,4 +148,28 @@ h3.title span {
     margin-right: .3rem;
     color: rgb(23, 219, 23);
     text-shadow: 0px 0px 7px rgb(23, 219, 23);
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+}
+
+.events {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.events li {
+    max-width: 250px;
+}
+
+.events .year {
+    margin-bottom: .8rem;
+    font-weight: 600;
+}
+
+.event {
+    opacity: .8;
 }
