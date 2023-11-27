@@ -14,7 +14,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .btn {
@@ -48,12 +48,17 @@ h3.title span {
 
 /* Home */
 
-.home {
+#home {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     gap: 5rem;
+}
+
+#home a {
+    text-decoration: none;
+    color: currentColor;
 }
 
 .home-header {
@@ -96,10 +101,10 @@ h3.title span {
 
 /* Sobre mim */
 
-.about {
+#about {
     display: flex;
     flex-direction: column;
-    gap: 3.5rem;
+    gap: 4rem;
 }
 
 .about-me {
@@ -110,7 +115,7 @@ h3.title span {
 
 .about-me img {
     width: 220px;
-    height: 250px;
+    height: 220px;
     border-radius: 50%;
     object-fit: cover;
     object-position: top;
@@ -153,11 +158,13 @@ h3.title span {
 .timeline {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
 }
 
 .line {
     display: flex;
-    justify-content: space-evenly;
+    width: 1000px;
 }
 
 .line .button {
@@ -166,12 +173,14 @@ h3.title span {
     border-radius: 50%;
     background-color: black;
     border: 5px solid rgb(23, 219, 23);
+    margin-right: 230px;
+    margin-bottom: 1rem;
 }
 
 .events {
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .events li {
