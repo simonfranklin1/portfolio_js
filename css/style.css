@@ -90,8 +90,8 @@ h3.title span {
 
 .icons a:hover {
     color: rgb(23, 219, 23);
-    text-shadow: 0px 0px 15px rgb(23, 219, 23); 
-    scale: 1.05;   
+    text-shadow: 0px 0px 10px rgba(23, 219, 23, 0.56); 
+    scale: 1.2;   
 }
 
 /* Sobre mim */
@@ -153,6 +153,19 @@ h3.title span {
 .timeline {
     display: flex;
     flex-direction: column;
+}
+
+.line {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.line .button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    border: 5px solid rgb(23, 219, 23);
 }
 
 .events {
