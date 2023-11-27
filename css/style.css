@@ -99,7 +99,7 @@ a {
 
 .icons i:hover {
     color: rgb(23, 219, 23);
-    text-shadow: 0px 0px 10px rgba(23, 219, 23); 
+    text-shadow: 0px 0px 10px rgba(23, 219, 23, 0.5); 
     scale: 1.2;   
 }
 
@@ -284,6 +284,10 @@ a {
     border-radius: 10px;
     transition: .3s ease-in-out;
     cursor: pointer;
+}
+
+.skill-box i {
+    pointer-events: none;
 }
 
 .skill-box:hover {
