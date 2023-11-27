@@ -14,18 +14,18 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 1.5rem 3rem;
+    padding: 3rem;
 }
 
 .btn {
     background: none;
     color: rgb(23, 219, 23);
-    border: 2px solid rgb(23, 219, 23);
+    border: 3px solid rgb(23, 219, 23);
     border-radius: 0.5rem;
     padding: 0.7rem 1.7rem;
     text-transform: uppercase;
     font-weight: bold;
-    transition: .4s;
+    transition: .3s;
     cursor: pointer;    
 }
 
@@ -37,10 +37,10 @@ section {
 }
 
 h3.title {
-    font-size: 35px;
+    font-size: 38px;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 4.5rem;
+    margin-bottom: 3.5rem;
 }
 
 h3.title span {
@@ -110,8 +110,8 @@ h3.title span {
 }
 
 .about-me img {
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
     object-position: top;
@@ -122,9 +122,9 @@ h3.title span {
 
 @keyframes float {
     from {
-        transform: translateY(-10%);
+        transform: translateY(-15%);
     } to {
-        transform: translateY(5%);
+        transform: translateY(0);
     }
 }
 
@@ -201,4 +201,57 @@ h3.title span {
     } to {
         width: 100%;
     }
+}
+
+/* Portfólio */
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.308);
+    border-radius: 20px;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.image {
+    height: 39%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.info-project {
+    margin-top: 1.5rem;
+}
+
+.info-project h3 {
+    margin-bottom: .8rem;
+}
+
+.made-with i {
+    color: rgb(23, 219, 23);
+    margin-left: .5rem;
+}
+
+.anchors {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+}
+
+.anchors a {
+    text-decoration: none;
 }
