@@ -5,43 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
     <script src="js/script.js" defer></script>
     <title>Meu Portfólio</title>
 </head>
 <body>
-    <section class="home">
+    <section id="home">
         <div class="home-header">
             <p>oi, eu sou o simon</p>
-            <h2>Front End <span class="icons"><a href="https://github.com/simonfranklin1" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <h2 class="frontend">Front End <div class="icons"><a href="https://github.com/simonfranklin1" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="https://docs.google.com/document/d/10jVe3tEInT2ziCtU4MPdN6SJX4GrTaQr/edit?usp=drive_link&ouid=113300837558869934481&rtpof=true&sd=true" target="_blank"><i class="fa-solid fa-file"></i></a> 
-                <a href=""><i class="fa-brands fa-linkedin"></i></a></span></h2>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a></div></h2>
             <h2>Developer</h2>
         </div>
 
-        <button>Sobre mim</button>
+        <a href="#about"><button class="btn">Sobre mim</button></a>
     </section>
-    <section class="about">
+    <section id="about">
         <h3 class="title">Sobre <span>mim</span></h3>
 
-        <div class="informations">
-            <h3 class="name">Simon Franklin</h3>
-            <ul>
-                <li>Desenvolvendo interfaces e projetos pessoais em Javascript</li>
-                <li>Cursando Análise e Desenvolvimento de Sistemas</li>
-                <li>Interesse em Desenvolvimento Front End</li>
-                <li>Buscando oportunidade para atuar na área</li>
-            </ul>
+        <div class="about-me">
+          <img src="assets/img/IMG_1466.PNG" alt="Simon Franklin">
+          <div class="informations">
+              <h3>Simon Franklin</h3>
+              <ul>
+                  <li><i class="fa-solid fa-code"></i>Desenvolvendo interfaces e projetos pessoais desde 2022</li>
+                  <li><i class="fa-solid fa-graduation-cap"></i>Cursando Análise e Desenvolvimento de Sistemas</li>
+                  <li><i class="fa-regular fa-lightbulb"></i>Interesse em Desenvolvimento Front End</li>
+                  <li><i class="fa-solid fa-rocket"></i>Buscando oportunidade para atuar na área</li>
+              </ul>
+          </div>
         </div>
-        <div class="timeline"></div>
+
+        <div class="timeline">
+          <div class="event">
+            <div class="point"></div>
+            <h3>2021</h3>
+            <div class="text-box">
+              <p>Primeiro contato com programação através de um curso de algoritmos que utilizava a linguagem portugol.</p>
+            </div>
+          </div>
+          <div class="event">
+            <div class="point"></div>
+            <h3>2022</h3>
+            <div class="text-box">
+              <p>Início da graduação em Análise e Desenvolvimento de Sistemas e começo dos estudos em HTML, CSS e JavaScript.</p>
+            </div>
+          </div>
+          <div class="event">
+            <div class="point"></div>
+            <h3>2023</h3>
+            <div class="text-box">
+              <p>Seguindo os estudos em JavaScript, aprendendo sobre React e integração com APIs. Desenvolvendo projetos pessoais para fixar o aprendizado.</p>
+            </div>
+          </div>
+          <div class="event">
+            <div class="point"></div>
+            <h3>Atualmente</h3>
+            <div class="text-box">
+              <p>Em busca da primeira vaga como Desenvolvedor Front end.</p>
+            </div>
+          </div>
+        </div>
     </section>
-    <section class="portfolio">
+    <section id="portfolio">
         <h3 class="title">Meus <span>projetos</span></h3>
         <div class="projects-container">
             <div class="card">
-                <div class="image carrinho"></div>
+                <img src="assets/img/print carrinho de compras.png" class="image"></img>
                 <div class="info-project">
                   <h3>Carrinho de compras</h3>
-                  <div class="technologies">Feito com <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i><i class="fa-brands fa-react"></i></div>
+                  <div class="made-with">Feito com <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i><i class="fa-brands fa-react"></i></div>
                   <p>Esse projeto lista um catálogo de produtos. Também permite buscar produtos, adicionar e remover eles do carrinho e controlar sua quantidade.</p>
                 </div>
               
@@ -52,10 +88,10 @@
               </div>
             
               <div class="card">
-                <div class="image quiz"></div>
+                <img src="assets/img/print-quiz.png" class="image quiz"></img>
                 <div class="info-project">
                   <h3>Quiz de programação</h3>
-                  <div class="technologies">Feito com <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i><i class="fa-brands fa-react"></i></div>
+                  <div class="made-with">Feito com <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i><i class="fa-brands fa-react"></i></div>
                   <p>Um quiz para testar os conhecimentos do usuário sobre programação com perguntas de HTML, CSS e Javascript.</p>
                 </div>
   
@@ -66,10 +102,10 @@
               </div>
             
               <div class="card">
-                <div class="image todo"></div>
+                <img src="assets/img/print-todo-list.png" class="image todo"></img>
                 <div class="info-project">
                   <h3>Todo List</h3>
-                  <div class="technologies">Feito com <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i><i class="fa-brands fa-square-js"></i></div>
+                  <div class="made-with">Feito com <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i><i class="fa-brands fa-square-js"></i></div>
                   <p>O usuário pode adicionar, editar e remover tarefas da lista de tarefas.</p>
                 </div>
   
@@ -80,45 +116,49 @@
               </div>
         </div>
     </section>
-    <section class="skills">
+
+    <section id="skills">
         <h3 class="title">Minhas <span>habilidades</span></h3>
         <div class="skills-container">
-            <div class="skill-icon">
-                <i class="fa-brands fa-html5"></i>
-            </div>
-            <div class="skill-icon">
-                <i class="fa-brands fa-css3-alt"></i>
-            </div>
-            <div class="skill-icon">
-                <i class="fa-brands fa-square-js"></i>
-            </div>
-            <div class="skill-icon">
-                <i class="fa-brands fa-react"></i>
-            </div>
-        </div>
-        <div class="skills-description">
-          <div class="description">
-            <h3> /*Passe o mouse sobre o ícone para ler a descrição*/</h3>
+          <div class="skill-icons">
+              <div class="skill-box">
+                  <i class="fa-brands fa-html5"></i>
+              </div>
+              <div class="skill-box">
+                  <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <div class="skill-box">
+                  <i class="fa-brands fa-square-js"></i>
+              </div>
+              <div class="skill-box">
+                  <i class="fa-brands fa-react"></i>
+              </div>
           </div>
-          <div class="description hidden">
-            <h3><span>HTML5</span></h3>
-            <p>HTML é uma linguagem de marcação utilizada para desenvolver páginas web.</p>
-            <p>Tenho 1 ano de experiência com essa linguagem.</p>
-          </div>
-          <div class="description hidden">
-            <h3><span>CSS3</span></h3>
-            <p>CSS é um mecanismo utilizado para estilizar o conteúdo das páginas web, deixando a experiência do usuário mais amigável.</p>
-            <p>Tenho 1 ano de experiência com essa linguagem.</p>
-          </div>
-          <div class="description hidden">
-            <h3><span>Javascript</span></h3>
-            <p>Javascript é uma linguagem de programação que permite a você implementar itens complexos em páginas web.</p>
-            <p>Tenho 8 meses de experiência com essa linguagem.</p>
-          </div>
-          <div class="description hidden">
-            <h3><span>React</span></h3>
-            <p>React é uma biblioteca Javascript para desenvolvimento de aplicações front-end.</p>
-            <p>Tenho 2 meses de experiência com essa biblioteca.</p>
+
+          <div class="skills-description">
+            <div class="description">
+              <h3> /*Passe o mouse sobre o ícone para ler a descrição*/</h3>
+            </div>
+            <div class="description hidden">
+              <h3><span>HTML5</span></h3>
+              <p>HTML é uma linguagem de marcação utilizada para desenvolver páginas web.</p>
+              <p>Tenho 1 ano de experiência com essa linguagem.</p>
+            </div>
+            <div class="description hidden">
+              <h3><span>CSS3</span></h3>
+              <p>CSS é um mecanismo utilizado para estilizar o conteúdo das páginas web, deixando a experiência do usuário mais amigável.</p>
+              <p>Tenho 1 ano de experiência com essa linguagem.</p>
+            </div>
+            <div class="description hidden">
+              <h3><span>Javascript</span></h3>
+              <p>Javascript é uma linguagem de programação que permite a você implementar itens complexos em páginas web.</p>
+              <p>Tenho 8 meses de experiência com essa linguagem.</p>
+            </div>
+            <div class="description hidden">
+              <h3><span>React</span></h3>
+              <p>React é uma biblioteca Javascript para desenvolvimento de aplicações front-end.</p>
+              <p>Tenho 3 meses de experiência com essa biblioteca.</p>
+            </div>
           </div>
         </div>
     </section>
