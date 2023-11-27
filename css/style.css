@@ -88,12 +88,12 @@ h3.title span {
     gap: .6rem;
 }
 
-.icons a {
+.icons i {
     color: #fff;
     transition: .3s;
 }
 
-.icons a:hover {
+.icons i:hover {
     color: rgb(23, 219, 23);
     text-shadow: 0px 0px 10px rgba(23, 219, 23, 0.56); 
     scale: 1.2;   
@@ -157,41 +157,36 @@ h3.title span {
 
 .timeline {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-evenly;
     margin-top: 3rem;
 }
 
-.line {
-    display: flex;
-    width: 1000px;
-}
-
-.line .button {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: black;
-    border: 5px solid rgb(23, 219, 23);
-    margin-right: 230px;
-    margin-bottom: 1rem;
-}
-
-.events {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-.events li {
-    max-width: 250px;
-}
-
-.events .year {
-    margin-bottom: .8rem;
-    font-weight: 600;
-}
-
 .event {
-    opacity: .8;
+    position: relative;
+    max-width: 25%;
+    padding: 40px 20px 0px;
+}
+
+.event h3 {
+    margin-bottom: 15px;
+}
+
+.point {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 5px solid rgb(23, 219, 23);
+    background-color: #000;
+    z-index: 5;
+    top: -10px;
+    left: 20px;
+}
+
+.timeline::after {
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 100%;
+    background-color: rgb(23, 219, 23);
 }
