@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/script.js" defer></script>
     <title>Meu Portfólio</title>
 </head>
@@ -21,13 +22,14 @@
             <h2>Developer</h2>
         </div>
 
-        <a href="#about"><button class="btn">Sobre mim</button></a>
+        <a href="#about"><button class="btn about-anchor">Sobre mim</button></a>
     </section>
+
     <section id="about">
         <h3 class="title">Sobre <span>mim</span></h3>
 
         <div class="about-me">
-          <img src="assets/img/IMG_1466.PNG" alt="Simon Franklin">
+          <img class="about-image" src="assets/img/IMG_1466.PNG" alt="Simon Franklin">
           <div class="informations">
               <h3>Simon Franklin</h3>
               <ul>
@@ -70,10 +72,11 @@
           </div>
         </div>
     </section>
+
     <section id="portfolio">
         <h3 class="title">Meus <span>projetos</span></h3>
         <div class="projects-container">
-            <div class="card">
+            <div class="card project-1">
                 <img src="assets/img/print carrinho de compras.png" class="image"></img>
                 <div class="info-project">
                   <h3>Carrinho de compras</h3>
@@ -87,7 +90,7 @@
                 </div>
               </div>
             
-              <div class="card">
+              <div class="card project-2">
                 <img src="assets/img/print-quiz.png" class="image quiz"></img>
                 <div class="info-project">
                   <h3>Quiz de programação</h3>
@@ -101,7 +104,7 @@
                 </div>
               </div>
             
-              <div class="card">
+              <div class="card project-3">
                 <img src="assets/img/print-todo-list.png" class="image todo"></img>
                 <div class="info-project">
                   <h3>Todo List</h3>
@@ -121,16 +124,16 @@
         <h3 class="title">Minhas <span>habilidades</span></h3>
         <div class="skills-container">
           <div class="skill-icons">
-              <div class="skill-box">
+              <div class="skill-box box-1">
                   <i class="fa-brands fa-html5"></i>
               </div>
-              <div class="skill-box">
+              <div class="skill-box box-2">
                   <i class="fa-brands fa-css3-alt"></i>
               </div>
-              <div class="skill-box">
+              <div class="skill-box box-3">
                   <i class="fa-brands fa-square-js"></i>
               </div>
-              <div class="skill-box">
+              <div class="skill-box box-4">
                   <i class="fa-brands fa-react"></i>
               </div>
           </div>

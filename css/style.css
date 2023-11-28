@@ -55,6 +55,11 @@ a {
     display: none;
 }
 
+
+.home-header, .about-anchor, .about-image, .informations, .timeline, .card, .skill-box, .skills-description {
+    visibility: hidden;
+}
+
 /* Home */
 
 #home {
@@ -107,7 +112,7 @@ a {
 
 .about-me {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     padding: 5rem 0;
 }
