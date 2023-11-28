@@ -78,25 +78,25 @@ show.reveal('.project-3', {
 
 show.reveal('.box-1', {
     duration: 2000,
-    distance: '90px',
+    distance: '50%',
     delay: 500
 })
 
 show.reveal('.box-2', {
     duration: 2000,
-    distance: '90px',
+    distance: '50%',
     delay: 800
 })
 
 show.reveal('.box-3', {
     duration: 2000,
-    distance: '90px',
+    distance: '50%',
     delay: 1100
 })
 
 show.reveal('.box-4', {
     duration: 2000,
-    distance: '90px',
+    distance: '50%',
     delay: 1300
 })
 
