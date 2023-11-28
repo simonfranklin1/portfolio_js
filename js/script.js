@@ -17,11 +17,11 @@ window.show = ScrollReveal({reset: true});
 
 /* Home */
 
-show.reveal('.home-header', {
+show.reveal('#home', {
     duration: 2000
 }) 
 
-show.reveal('#home button', {
+show.reveal('.about-anchor', {
     duration: 2000,
     distance: '50%',
     delay: 500
@@ -29,7 +29,7 @@ show.reveal('#home button', {
 
 show.reveal('.title', {
     duration: 2000,
-    distance: '90px'
+    distance: '50%'
 })
 
 /* About */
@@ -98,6 +98,12 @@ show.reveal('.box-4', {
     duration: 2000,
     distance: '50%',
     delay: 1300
+})
+
+show.reveal('.box-5', {
+    duration: 2000,
+    distance: '50%',
+    delay: 1500
 })
 
 show.reveal('.skills-description', {

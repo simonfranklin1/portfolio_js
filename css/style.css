@@ -8,13 +8,13 @@
 /* Global */
 
 body {
-    background-color: black;
+    background-color: rgb(26, 26, 26);
     color: #fff;
 }
 
 section {
     min-height: 100vh;
-    padding: 3rem 4%;
+    padding: 3rem 5%;
 }
 
 .btn {
@@ -32,7 +32,7 @@ section {
 .btn:hover {
     background-color: rgb(23, 219, 23);
     color: black;
-    box-shadow: 0px 0px 10px rgb(23, 219, 23);
+    box-shadow: 0px 0px 10px rgb(23, 219, 23, 0.5);
     scale: 1.05;
 }
 
@@ -55,7 +55,7 @@ a {
     display: none;
 }
 
-.home-header, .about-anchor, .about-image, .informations, .timeline, .card, .skill-box, .skills-description {
+#home, .about-anchor, .about-image, .informations, .timeline, .card, .skill-box, .skills-description {
     visibility: hidden;
 }
 
@@ -74,8 +74,8 @@ a {
 }
 
 .home-header h2 {
-    font-size: 70px;
-    line-height: 60px;
+    font-size: 90px;
+    line-height: 75px;
 }
 
 .frontend {
@@ -85,25 +85,24 @@ a {
 }
 
 .home-header p {
-    margin-bottom: 5px;
-    margin-left: 3px;
     color: rgb(23, 219, 23);
+    font-size: 20px;
+    opacity: .7;
+    font-weight: 600;
 }
 
 .icons {
     display: flex;
-    font-size: 30px;
-    gap: .6rem;
+    gap: .8rem;
 }
 
-.icons i {
+.icons a {
     color: #fff;
     transition: .3s;
+    font-size: 35px;
 }
 
-.icons i:hover {
-    color: rgb(23, 219, 23);
-    text-shadow: 0px 0px 10px rgba(23, 219, 23, 0.5); 
+.icons a:hover { 
     scale: 1.2;   
 }
 
@@ -185,7 +184,7 @@ a {
     width: 25px;
     border-radius: 50%;
     border: 5px solid rgb(23, 219, 23);
-    background-color: #000;
+    background-color: rgb(26, 26, 26);
     z-index: 5;
     top: 0;
     left: 20px;
@@ -274,14 +273,14 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 2rem;
+
 }
 
 .skill-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .8rem;
+    padding: .7rem;
     color: rgb(23, 219, 23);
     font-size: 40px;
     border: 2px solid rgb(23, 219, 23);
@@ -329,6 +328,10 @@ a {
 
 
 @media screen and (max-width: 578px) {
+    .title {
+        font-size: 35px;
+    }
+
     .home-header h2 {
         font-size: 45px;
         line-height: 40px;
@@ -349,6 +352,10 @@ a {
 
     .btn {
         padding: .5rem 1.3rem;
+    }
+
+    #about {
+        overflow-x: hidden;
     }
 
     .about-me {
@@ -376,5 +383,18 @@ a {
 
     .skills-container {
         flex-direction: column;
+        gap: 3.5rem;
+    }
+
+    .skill-icons {
+        flex-direction: row;
+    }
+
+    .skill-box {
+        padding: .5rem;
+    }
+
+    .skills-description {
+        width: 100%;
     }
 }
