@@ -55,7 +55,6 @@ a {
     display: none;
 }
 
-
 .home-header, .about-anchor, .about-image, .informations, .timeline, .card, .skill-box, .skills-description {
     visibility: hidden;
 }
@@ -325,5 +324,57 @@ a {
     } to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+
+@media screen and (max-width: 578px) {
+    .home-header h2 {
+        font-size: 45px;
+        line-height: 40px;
+    }
+
+    .frontend {
+        gap: .5rem;
+    }
+
+    .home-header p {
+        font-size: 15px;
+    }
+
+    .icons {
+        font-size: 18px;
+        gap: .5rem;
+    }
+
+    .btn {
+        padding: .5rem 1.3rem;
+    }
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .timeline {
+        flex-direction: column;
+    }
+
+    .timeline::after {
+        width: 5px;
+        height: 100%;
+        animation: none;
+        position: absolute;
+        left: 30px;
+    }   
+    
+    .event {
+        width: 80%;
+        padding-left: 70px;
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+
+    .skills-container {
+        flex-direction: column;
     }
 }
