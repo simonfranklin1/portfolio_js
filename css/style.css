@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* Global */
@@ -49,6 +50,7 @@ h3.title span {
 
 a {
     text-decoration: none;
+    color: unset;
 }
 
 .hidden {
@@ -108,6 +110,10 @@ a {
 
 /* Sobre mim */
 
+#about {
+    overflow-x: hidden;
+}
+
 .about-me {
     display: flex;
     justify-content: space-around;
@@ -159,7 +165,7 @@ a {
 
 .timeline {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 3rem;
     position: relative;
 }
@@ -167,7 +173,7 @@ a {
 .event {
     position: relative;
     width: 20%;
-    padding: 40px 20px 0;
+    padding: 40px 30px 0 0;
 }
 
 .event h3 {
@@ -176,6 +182,7 @@ a {
 
 .text-box {
     font-size: 15px;
+    opacity: .7;
 }
 
 .point {
@@ -187,7 +194,7 @@ a {
     background-color: rgb(26, 26, 26);
     z-index: 5;
     top: 0;
-    left: 20px;
+    left: 0px;
 }
 
 .timeline::after {
@@ -218,32 +225,36 @@ a {
     justify-content: space-evenly;
 }
 
-.card {
+.projects_card {
     display: flex;
     flex-direction: column;
     width: 350px;
-    height: 470px;
-    border: 1px solid rgba(255, 255, 255, 0.308);
-    border-radius: 20px;
-    padding: 1.3rem;
-    position: relative;
-    font-size: 15px;
+    min-height: 450px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.15);  
+    overflow: hidden;  
 }
 
-.image {
+.projects_card-image {
     height: 39%;
     width: 100%;
     object-fit: cover;
-    object-position: center;
-    border-radius: 10px;
+    object-position: center top;
 }
 
-.info-project {
-    margin-top: 1rem;
+.projects_card-info {
+    padding: 1rem 2rem;
 }
 
-.info-project h3 {
+.projects_card-info h3 {
+    font-weight: 500;
     margin-bottom: 1rem;
+}
+
+.projects_card-info p {
+    text-align: justify;
+    margin-top: .5rem;
+    font-size: 14px;
 }
 
 .made-with i {
@@ -253,13 +264,28 @@ a {
 
 .anchors {
     display: flex;
-    gap: 1rem;
-    position: absolute;
-    bottom: 1.3rem;
+    justify-content: space-between;
+    width: 100%;
+    flex: 1;
+    align-items: flex-end;
+    padding: 1rem 2rem;
 }
 
-.anchors a {
-    text-decoration: none;
+.projects_card-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(26, 26, 26);
+    font-weight: 700;
+    background-color: rgb(23, 219, 23);
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.projects_card-link:hover {
+    box-shadow: 0px 0px 10px rgb(23, 219, 23);
 }
 
 /* Skills */
@@ -327,6 +353,26 @@ a {
     }
 }
 
+@media screen and (max-width: 850px) {
+
+    .about-image img {
+        width: 170px;
+        height: 170px;
+    }  
+
+    .informations {
+        margin-left: 2rem;
+    }
+    
+    .informations ul li {
+        font-size: 12px;
+    }
+
+    .text-box {
+        font-size: 12px;
+    }
+}
+
 
 @media screen and (max-width: 578px) {
     /* Início */
@@ -377,7 +423,7 @@ a {
         height: 100%;
         animation: none;
         position: absolute;
-        left: 30px;
+        left: 10px;
     }   
     
     .event {
