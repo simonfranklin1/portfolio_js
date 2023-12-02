@@ -18,17 +18,11 @@ window.show = ScrollReveal({reset: true});
 /* Home */
 
 show.reveal('#home', {
-    duration: 2000
+    duration: 1500
 }) 
 
-show.reveal('.about-anchor', {
-    duration: 2000,
-    distance: '50%',
-    delay: 500
-})
-
 show.reveal('.title', {
-    duration: 2000,
+    duration: 1500,
     distance: '50%'
 })
 
@@ -56,7 +50,7 @@ show.reveal('.timeline', {
 
 /* Portfolio */
 
-show.reveal('.card', {
+show.reveal('.projects_card', {
     duration: 1500,
     distance: '90px',
     delay: 500

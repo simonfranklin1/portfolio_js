@@ -57,7 +57,7 @@ a {
     display: none;
 }
 
-#home, .about-anchor, .about-image, .informations, .timeline, .card, .skill-box, .skills-description {
+#home, .about-image, .informations, .timeline, .card, .skill-box, .skills-description {
     visibility: hidden;
 }
 
@@ -166,7 +166,6 @@ a {
 .timeline {
     display: flex;
     justify-content: space-between;
-    margin-top: 3rem;
     position: relative;
 }
 
@@ -339,8 +338,11 @@ a {
 }
 
 .description span {
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
     color: rgb(23, 219, 23);
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
 @keyframes appear {
@@ -484,7 +486,7 @@ a {
         font-size: 17px;
     }
 
-    .description h3 {
+    .description h3, .description span {
         text-align: center;
     }
 
